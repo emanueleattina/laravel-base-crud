@@ -22,5 +22,16 @@
             }
         }
     }
-    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+    input {
+        border: 1px solid #636b6f;
+        padding: 5px;
+        margin: 10px;
+    }
 }
