@@ -65,6 +65,12 @@
         </style>
     </head>
     <body>
-        @yield('main')
+        <div id="root">
+            @yield('main')
+        </div>
+        
     </body>
-</html>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="/js/app.js"></script>
+    </html>

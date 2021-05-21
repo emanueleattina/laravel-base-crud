@@ -40,3 +40,54 @@ form input {
   margin: 10px;
 }
 
+.delete-popup {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-popup .sure {
+  background: rgba(255, 255, 255, 0.75);
+  padding: 30px;
+  width: 300px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-popup .sure .buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.delete-popup .sure .buttons button {
+  background: grey;
+  color: white;
+  margin: 5px;
+  padding: 5px 15px;
+  border-radius: 3px;
+}
+
+.delete-popup .sure .buttons button:hover {
+  background: rgba(128, 128, 128, 0.85);
+}
+
+.delete-popup .sure .buttons input {
+  background: grey;
+  color: white;
+  margin: 5px;
+  padding: 5px 15px;
+  border-radius: 3px;
+}
+
+.delete-popup .sure .buttons input:hover {
+  background: rgba(128, 128, 128, 0.85);
+}
+

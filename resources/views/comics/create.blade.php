@@ -2,6 +2,8 @@
 
 @section('main')
 <main>
+    <a href="{{route('home')}}">Home</a>
+    <a href="{{route('comics.index')}}">Back</a>
     <form action="{{route('comics.store')}}" method="post">
         @csrf
         @method('POST')
