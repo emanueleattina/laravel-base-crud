@@ -69,16 +69,22 @@ form {
                     background: rgba($color: grey, $alpha: 0.85);
                 }
             }
-            input {
-                background: grey;
-                color: white;
-                margin: 5px;
-                padding: 5px 15px;
-                border-radius: 3px;
-                &:hover {
-                    background: rgba($color: grey, $alpha: 0.85);
+            form {
+                width: fit-content;
+                input {
+                    background: grey;
+                    color: white;
+                    margin: 5px;
+                    padding: 5px 15px;
+                    border-radius: 3px;
+                    width: fit-content;
+                    border: none;
+                    &:hover {
+                        background: rgba($color: grey, $alpha: 0.85);
+                    }
                 }
             }
+            
             
         }
     }

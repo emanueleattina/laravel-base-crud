@@ -79,15 +79,25 @@ form input {
   background: rgba(128, 128, 128, 0.85);
 }
 
-.delete-popup .sure .buttons input {
+.delete-popup .sure .buttons form {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.delete-popup .sure .buttons form input {
   background: grey;
   color: white;
   margin: 5px;
   padding: 5px 15px;
   border-radius: 3px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
 }
 
-.delete-popup .sure .buttons input:hover {
+.delete-popup .sure .buttons form input:hover {
   background: rgba(128, 128, 128, 0.85);
 }
 
