@@ -4,6 +4,15 @@
 <main>
     <a href="{{route('home')}}">Home</a>
     <a href="{{route('comics.show', ['comic' => $comic->id])}}">Back</a>
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
     <form action="{{route('comics.update', ['comic' => $comic->id])}}" method="post">
         @csrf
         @method('PUT')

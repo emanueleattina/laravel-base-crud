@@ -4,6 +4,15 @@
 <main>
     <a href="{{route('home')}}">Home</a>
     <a href="{{route('comics.index')}}">Back</a>
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
     <form action="{{route('comics.store')}}" method="post">
         @csrf
         @method('POST')
